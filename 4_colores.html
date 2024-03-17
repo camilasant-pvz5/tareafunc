@@ -24,32 +24,18 @@
 
 <script>
 
-var azul = document.getElementById("azul");
-var rojo = document.getElementById("rojo");
-var amarillo = document.getElementById("amarillo");
-var verde = document.getElementById("verde");
-
-
-azul.addEventListener("click", function() {
-    cambiarColor(azul);
-});
-
-rojo.addEventListener("click", function() {
-    cambiarColor(rojo);
-});
-
-amarillo.addEventListener("click", function() {
-    cambiarColor(amarillo);
-});
-
-verde.addEventListener("click", function() {
-    cambiarColor(verde);
-});
-
-function cambiarColor(elemento) {
-    elemento.style.backgroundColor = "black";
-}
-
+    document.getElementById('azul').addEventListener('click', function () {
+        this.style.backgroundColor = 'black';
+    });
+    document.getElementById('rojo').addEventListener('click', function () {
+        this.style.backgroundColor = 'black';
+    });
+    document.getElementById('amarillo').addEventListener('click', function () {
+        this.style.backgroundColor = 'black';
+    });
+    document.getElementById('verde').addEventListener('click', function () {
+        this.style.backgroundColor = 'black';
+    });
 
 </script>
 </html>
