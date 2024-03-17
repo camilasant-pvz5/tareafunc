@@ -1,0 +1,28 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <div style="width: 200px; height: 200px; background-color: white;
+    border: 2px solid black;"  id="key"> 
+
+    
+  </body>
+
+  <script>
+    var color = 'white';
+    document.addEventListener('keydown', function (event) {
+        if (event.key === 'a') {
+            color = 'pink';
+        } else if (event.key === 's') {
+            color = 'orange';
+        } else if (event.key === 'd') {
+            color = 'lightblue';
+        } 
+        document.getElementById('key').style.backgroundColor = color;
+    });
+</script>
+</html>
